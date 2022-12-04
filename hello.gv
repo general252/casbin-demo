@@ -1,0 +1,110 @@
+digraph G {
+
+u_dav[shape=ellipse, style=filled, color=cadetblue4 ];
+ug_g4[shape=folder, style=filled, color=skyblue ];
+u_did[shape=ellipse, style=filled, color=cadetblue4 ];
+ug_g6[shape=folder, style=filled, color=skyblue ];
+u_lili[shape=ellipse, style=filled, color=cadetblue4 ];
+ug_g2[shape=folder, style=filled, color=skyblue ];
+u_tony[shape=ellipse, style=filled, color=cadetblue4 ];
+ug_g2[shape=folder, style=filled, color=skyblue ];
+ug_g1[shape=folder, style=filled, color=skyblue ];
+ug_g2[shape=folder, style=filled, color=skyblue ];
+ug_g2[shape=folder, style=filled, color=skyblue ];
+ug_g3[shape=folder, style=filled, color=skyblue ];
+ug_g3[shape=folder, style=filled, color=skyblue ];
+ug_g4[shape=folder, style=filled, color=skyblue ];
+ug_g3[shape=folder, style=filled, color=skyblue ];
+ug_g5[shape=folder, style=filled, color=skyblue ];
+ug_g6[shape=folder, style=filled, color=skyblue ];
+ug_g3[shape=folder, style=filled, color=skyblue ];
+ug_g7[shape=folder, style=filled, color=skyblue ];
+ug_g3[shape=folder, style=filled, color=skyblue ];
+ug_g8[shape=folder, style=filled, color=skyblue ];
+ug_g4[shape=folder, style=filled, color=skyblue ];
+ug_g9[shape=folder, style=filled, color=skyblue ];
+ug_g4[shape=folder, style=filled, color=skyblue ];
+r_pu_2[shape=egg, style=filled, color=chocolate2 ];
+rg_rg2[shape=component, style=filled, color=lightgoldenrod1 ];
+r_pu_3[shape=egg, style=filled, color=chocolate2 ];
+rg_rg3[shape=component, style=filled, color=lightgoldenrod1 ];
+r_pu_4[shape=egg, style=filled, color=chocolate2 ];
+rg_rg3[shape=component, style=filled, color=lightgoldenrod1 ];
+r_pu_5[shape=egg, style=filled, color=chocolate2 ];
+rg_rg4[shape=component, style=filled, color=lightgoldenrod1 ];
+r_pu_6[shape=egg, style=filled, color=chocolate2 ];
+rg_rg4[shape=component, style=filled, color=lightgoldenrod1 ];
+r_pu_7[shape=egg, style=filled, color=chocolate2 ];
+rg_rg6[shape=component, style=filled, color=lightgoldenrod1 ];
+rg_rg1[shape=component, style=filled, color=lightgoldenrod1 ];
+rg_rg2[shape=component, style=filled, color=lightgoldenrod1 ];
+rg_rg2[shape=component, style=filled, color=lightgoldenrod1 ];
+rg_rg3[shape=component, style=filled, color=lightgoldenrod1 ];
+rg_rg2[shape=component, style=filled, color=lightgoldenrod1 ];
+rg_rg4[shape=component, style=filled, color=lightgoldenrod1 ];
+rg_rg3[shape=component, style=filled, color=lightgoldenrod1 ];
+rg_rg5[shape=component, style=filled, color=lightgoldenrod1 ];
+rg_rg4[shape=component, style=filled, color=lightgoldenrod1 ];
+rg_rg5[shape=component, style=filled, color=lightgoldenrod1 ];
+rg_rg6[shape=component, style=filled, color=lightgoldenrod1 ];
+rg_rg5[shape=component, style=filled, color=lightgoldenrod1 ];
+u_did[shape=ellipse, style=filled, color=cadetblue4 ];
+rg_rg6[shape=component, style=filled, color=lightgoldenrod1 ];
+u_tina[shape=ellipse, style=filled, color=cadetblue4 ];
+r_pu_1[shape=egg, style=filled, color=chocolate2 ];
+ug_g2[shape=folder, style=filled, color=skyblue ];
+rg_rg2[shape=component, style=filled, color=lightgoldenrod1 ];
+ug_g3[shape=folder, style=filled, color=skyblue ];
+r_pu_6[shape=egg, style=filled, color=chocolate2 ];
+ug_g3[shape=folder, style=filled, color=skyblue ];
+rg_rg3[shape=component, style=filled, color=lightgoldenrod1 ];
+
+
+subgraph cluster_0 {
+	style=filled;
+	color=lightgrey;
+	fillcolor="darkturquoise:cornsilk2";
+	gradientangle=50
+u_dav->ug_g4[penwidth=2, color=dodgerblue];
+u_did->ug_g6[penwidth=2, color=dodgerblue];
+u_lili->ug_g2[penwidth=2, color=dodgerblue];
+u_tony->ug_g2[penwidth=2, color=dodgerblue];
+ug_g1->ug_g2[penwidth=2, color=dodgerblue];
+ug_g2->ug_g3[penwidth=2, color=dodgerblue];
+ug_g3->ug_g4[penwidth=2, color=dodgerblue];
+ug_g3->ug_g5[penwidth=2, color=dodgerblue];
+ug_g6->ug_g3[penwidth=2, color=dodgerblue];
+ug_g7->ug_g3[penwidth=2, color=dodgerblue];
+ug_g8->ug_g4[penwidth=2, color=dodgerblue];
+ug_g9->ug_g4[penwidth=2, color=dodgerblue];
+
+}
+
+subgraph cluster_1 {
+	style=filled;
+	color=lightgrey;
+	fillcolor="cornsilk:cadetblue3";
+	gradientangle=100
+
+rg_rg2->r_pu_2[penwidth=2, color=red];
+rg_rg3->r_pu_3[penwidth=2, color=red];
+rg_rg3->r_pu_4[penwidth=2, color=red];
+rg_rg4->r_pu_5[penwidth=2, color=red];
+rg_rg4->r_pu_6[penwidth=2, color=red];
+rg_rg6->r_pu_7[penwidth=2, color=red];
+rg_rg2->rg_rg1[penwidth=2, color=red];
+rg_rg3->rg_rg2[penwidth=2, color=red];
+rg_rg4->rg_rg2[penwidth=2, color=red];
+rg_rg5->rg_rg3[penwidth=2, color=red];
+rg_rg5->rg_rg4[penwidth=2, color=red];
+rg_rg5->rg_rg6[penwidth=2, color=red];
+
+}
+u_did->rg_rg6[penwidth=3, label=" put allow ", color=grey28]
+u_tina->r_pu_1[penwidth=3, label=" get allow ", color=grey28]
+ug_g2->rg_rg2[penwidth=3, label=" get allow ", color=grey28]
+ug_g3->r_pu_6[penwidth=3, label=" put allow ", color=grey28]
+ug_g3->rg_rg3[penwidth=3, label=" put allow ", color=grey28]
+
+
+}
