@@ -35,10 +35,11 @@ func (tis *CasbinServer) Init(dataSource string) error {
 	return nil
 }
 
-func (tis *CasbinServer) New(modelString string, tabName string) error {
+func (tis *CasbinServer) New(modelString string) error {
 	db := tis.db
+	objectModel := new(CasbinRule)
 
-	a, err := gormadapter.NewAdapterByDBWithCustomTable(db, &CasbinRule{}, tabName)
+	a, err := gormadapter.NewAdapterByDBWithCustomTable(db, objectModel, objectModel.TableName())
 	//a, err := gormadapter.NewAdapterByDB(db)
 	if err != nil {
 		log.Println(err)
@@ -226,7 +227,7 @@ func (tis *CasbinServer) wrapResourceGroup(id string) string {
 	return "rg_" + id
 }
 
-func (tis *CasbinServer) GetDots(dataSource, tableName string) ([]CasbinRule, error) {
+func (tis *CasbinServer) GetDots(dataSource string) ([]CasbinRule, error) {
 	dialector := mysql.Open(dataSource)
 	db, err := gorm.Open(dialector, &gorm.Config{})
 	if err != nil {
@@ -234,7 +235,7 @@ func (tis *CasbinServer) GetDots(dataSource, tableName string) ([]CasbinRule, er
 	}
 
 	var objects []CasbinRule
-	if err := db.Table(tableName).Find(&objects).Error; err != nil {
+	if err := db.Model(new(CasbinRule)).Find(&objects).Error; err != nil {
 		log.Println(err)
 		return nil, err
 	}
